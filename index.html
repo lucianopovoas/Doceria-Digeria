@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Doceria Digeri</title>
+</head>
+
+<body class="bg-amber-200">
+    <header class="bg-white w-full top-0 z-50 px-4 py-2 flex flex-col md:flex-row md:items-center md:justify-around">
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <div class="flex items-center justify-between w-full md:w-auto">
+            <div>
+                <img src="./assets/logo.png" alt="" class="h-8" />
+            </div>
+
+            <h1>Digeri <span class="text-pink-300">Doceria</span></h1>
+
+            <label for="menu-toggle" class="md:hidden cursor-pointer flex flex-col gap-1">
+                <span class="block w-6 h-[2px] bg-black"></span>
+                <span class="block w-6 h-[2px] bg-black"></span>
+                <span class="block w-6 h-[2px] bg-black"></span>
+            </label>
+        </div>
+
+        <!-- Menu -->
+        <nav class="hidden peer-checked:flex flex-col gap-2 mt-2 md:flex md:flex-row md:items-center md:gap-2 md:mt-0">
+            <a href="#inicio" class="block px-4 py-2 hover:text-yellow-300">Inicio</a>
+            <a href="#destaques" class="block px-4 py-2 hover:text-yellow-300">Destaques</a>
+            <a href="#catalogo" class="block px-4 py-2 hover:text-yellow-300">Catálogo</a>
+            <a href="#encomendas" class="block px-4 py-2 hover:text-yellow-300">Encomendas</a>
+            <a href="#contato" class="block px-4 py-2 hover:text-yellow-300">Contato</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="w-full h-[600px] bg-sky-50 flex flex-col items-center justify-center gap-8 px-4 md:flex-row">
+            <div class="text-center md:text-left max-w-md">
+                <h1 class="text-2xl font-bold">
+                    Doces que <span class="text-pink-300">encantam</span> todos os sentidos
+                </h1>
+                <p class="text-xs text-gray-400 mt-2">
+                    Sabores artesanais que transformam momentos em memórias doces e inesquecíveis
+                </p>
+                <div class="flex justify-center md:justify-start gap-4 mt-4">
+                    <button class="bg-pink-300 text-white rounded-2xl px-4 py-2">Descobrir Sabores</button>
+                    <button class="border rounded-2xl px-4 py-2">Fazer Pedido</button>
+                </div>
+            </div>
+
+            <!-- Imagem ou bloco visual -->
+            <div class="h-64 w-64 bg-amber-700 rounded-xl"></div>
+        </div>
+    </section>
+
+    <section class="bg-[#fdf6ed] py-12 px-4 text-center">
+        <h2 class="text-3xl font-semibold text-[#653C2B]">Nossos Doces Mais Amados</h2>
+        <p class="text-[#927F6C] mt-2">
+            Conheça as criações que conquistaram o paladar dos nossos clientes e se tornaram verdadeiros sucessos
+        </p>
+        <div class="w-16 h-1 bg-green-700 mx-auto mt-2 rounded"></div>
+
+        <!-- Cards -->
+        <div class="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
+                <div class="bg-pink-200 flex items-center justify-center h-40">
+                    <!-- Substitua por uma imagem se quiser -->
+                    <img src="./assets/brigadeiro.svg" alt="Brigadeiro" class="h-24" />
+                </div>
+                <div class="p-4 text-left">
+                    <h3 class="font-semibold">Brigadeiro Gourmet</h3>
+                    <p class="text-sm text-gray-500">
+                        Nosso clássico brigadeiro com chocolate belga premium e finalização artesanal
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-green-700 font-semibold text-sm">R$ 8,90 <span
+                                class="text-xs">/unid</span></span>
+                        <button class="bg-green-800 text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
+                <div class="bg-pink-200 flex items-center justify-center h-40">
+                    <img src="./assets/macaron.svg" alt="Macaron" class="h-24" />
+                </div>
+                <div class="p-4 text-left">
+                    <h3 class="font-semibold">Macaron Francês</h3>
+                    <p class="text-sm text-gray-500">
+                        Delicados macarons com recheios exclusivos e textura perfeita
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-pink-400 font-semibold text-sm">R$ 12,50 <span
+                                class="text-xs">/unid</span></span>
+                        <button class="bg-[#4a2d27] text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
+                <div class="bg-green-800 flex items-center justify-center h-40">
+                    <img src="./assets/velvet.svg" alt="Red Velvet" class="h-24" />
+                </div>
+                <div class="p-4 text-left">
+                    <h3 class="font-semibold">Bolo Red Velvet</h3>
+                    <p class="text-sm text-gray-500">
+                        Bolo aveludado com cobertura de cream cheese e decoração artesanal
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-blue-600 font-semibold text-sm">R$ 120,00</span>
+                        <button class="bg-green-800 text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão final -->
+        <div class="mt-10">
+            <button class="border border-green-900 text-green-900 px-6 py-2 rounded-full hover:bg-green-100 transition">
+                <a href="#catalogo">Ver catálogo completo</a>
+            </button>
+        </div>
+    </section>
+
+    <div class="bg-amber-950 w-full mx-auto p-6" id="catalogo">
+        <!-- Cabeçalho -->
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold">Catálogo Completo</h2>
+            <p class="text-gray-500 text-sm">Explore nossa variedade de doces artesanais e bolos para todas as ocasiões
+            </p>
+            <div class="h-1 w-12 bg-green-800 mx-auto mt-2 rounded-full"></div>
+        </div>
+
+        <!-- Botões de filtro -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            <button data-filter="todos"
+                class="filter-btn bg-green-800 text-white px-4 py-1 rounded-full text-sm">Todos</button>
+            <button data-filter="Brigadeiros"
+                class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Brigadeiros</button>
+            <button data-filter="Bolos"
+                class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Bolos</button>
+            <button data-filter="Combos"
+                class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Combos</button>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4" id="cards-container">
+
+            <!-- Brigadeiros -->
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Brigadeiro" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 6,50</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Brigadeiro" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 6,50</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Brigadeiro" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 6,50</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Brigadeiro" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 6,50</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Bolos -->
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Bolo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Bolo de Chocolate</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 129,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Bolo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Bolo de Chocolate</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 129,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Bolo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Bolo de Chocolate</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 129,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Bolo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">Bolo de Chocolate</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 129,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Combos -->
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Combo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 229,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Combo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 229,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Combo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 229,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                <div class="bg-pink-100 h-40 flex items-center justify-center">
+                    <img src="https://placehold.co/100x100" alt="Combo" class="h-20">
+                </div>
+                <div class="p-4 text-sm">
+                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-green-800 font-semibold">R$ 229,99</span>
+                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão de Carrinho Fixo -->
+    <button id="toggle-cart"
+        class="fixed bottom-4 right-4 bg-green-800 text-white px-4 py-2 rounded-full shadow-lg z-50">
+        Carrinho 🛒
+    </button>
+
+    <!-- Carrinho -->
+    <div id="cart-panel"
+        class="fixed right-0 top-0 h-full w-80 bg-white shadow-lg p-4 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold">Seu Carrinho</h2>
+            <button id="close-cart" class="text-red-500 font-bold text-xl">&times;</button>
+        </div>
+        <ul id="cart-items" class="space-y-2 text-sm"></ul>
+        <div class="border-t pt-2 mt-4">
+            <p class="text-right font-semibold">Total: R$ <span id="cart-total">0.00</span></p>
+        </div>
+
+        <button id="finalize-order"
+            class="mt-4 w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">
+            Finalizar Pedido via WhatsApp
+        </button>
+
+    </div>
+
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const cards = document.querySelectorAll(".card");
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const category = btn.getAttribute("data-filter");
+
+                filterButtons.forEach(b => b.classList.remove("bg-green-800", "text-white"));
+                btn.classList.add("bg-green-800", "text-white");
+
+                cards.forEach(card => {
+                    const cardCategory = card.getAttribute("data-category");
+                    if (category === "todos" || cardCategory === category) {
+                        card.classList.remove("hidden");
+                    } else {
+                        card.classList.add("hidden");
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        const cart = [];
+        const cartPanel = document.getElementById('cart-panel');
+        const toggleCartBtn = document.getElementById('toggle-cart');
+        const closeCartBtn = document.getElementById('close-cart');
+        const cartItemsEl = document.getElementById('cart-items');
+        const cartTotalEl = document.getElementById('cart-total');
+
+        toggleCartBtn.addEventListener('click', () => {
+            cartPanel.classList.toggle('translate-x-full');
+        });
+
+        closeCartBtn.addEventListener('click', () => {
+            cartPanel.classList.add('translate-x-full');
+        });
+
+        // Função para atualizar o carrinho visualmente
+        function renderCart() {
+            cartItemsEl.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price * item.quantity;
+                const li = document.createElement('li');
+                li.className = 'flex justify-between items-center border-b pb-1';
+
+                li.innerHTML = `
+            <div class="flex flex-col">
+                <span>${item.quantity}x ${item.name}</span>
+                <span class="text-green-700">R$ ${(item.price * item.quantity).toFixed(2)}</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <button class="text-green-600 font-bold text-lg increment" data-index="${index}">+</button>
+                <button class="text-red-600 font-bold text-lg decrement" data-index="${index}">−</button>
+            </div>
+        `;
+
+                cartItemsEl.appendChild(li);
+            });
+
+            // Botões de adicionar quantidade
+            document.querySelectorAll('.increment').forEach(button => {
+                button.addEventListener('click', () => {
+                    const index = parseInt(button.getAttribute('data-index'));
+                    cart[index].quantity += 1;
+                    renderCart();
+                });
+            });
+
+            // Botões de remover quantidade
+            document.querySelectorAll('.decrement').forEach(button => {
+                button.addEventListener('click', () => {
+                    const index = parseInt(button.getAttribute('data-index'));
+                    if (cart[index].quantity > 1) {
+                        cart[index].quantity -= 1;
+                    } else {
+                        cart.splice(index, 1);
+                    }
+                    renderCart();
+                });
+            });
+
+            cartTotalEl.textContent = total.toFixed(2);
+        }
+
+
+
+        // Detectar cliques nos botões "Adicionar"
+        document.querySelectorAll('.card button').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card');
+                const name = card.querySelector('h3').textContent;
+                const priceText = card.querySelector('span.text-green-800')?.textContent || 'R$ 0,00';
+                const price = parseFloat(priceText.replace('R$', '').replace(',', '.'));
+
+                // Verifica se o item já existe
+                const existingItem = cart.find(item => item.name === name && item.price === price);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({ name, price, quantity: 1 });
+                }
+
+                renderCart();
+
+                document.getElementById('finalize-order').addEventListener('click', () => {
+                    if (cart.length === 0) {
+                        alert('Seu carrinho está vazio!');
+                        return;
+                    }
+
+                    let message = '*Pedido via site:*%0A';
+
+                    cart.forEach(item => {
+                        message += `• ${item.quantity}x ${item.name} - R$ ${item.price.toFixed(2)}%0A`;
+                    });
+
+                    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+                    message += `%0A*Total: R$ ${total.toFixed(2)}*`;
+
+                    const phone = '71996417863';
+                    const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+
+                    window.open(whatsappURL, '_blank');
+                });
+
+
+                // Feedback visual
+                const originalText = button.textContent;
+                button.textContent = '✅ Adicionado!';
+                button.classList.add('bg-green-700');
+
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('bg-green-700');
+                }, 1000);
+            });
+        });
+
+    </script>
+</body>
+
+
+</html>
