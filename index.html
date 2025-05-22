@@ -8,7 +8,8 @@
     <title>Doceria Digeri</title>
 </head>
 
-<body class="bg-amber-200">
+<body>
+    <!--Cabeçalho-->
     <header class="bg-white w-full top-0 z-50 px-4 py-2 flex flex-col md:flex-row md:items-center md:justify-around">
         <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
@@ -34,7 +35,8 @@
         </nav>
     </header>
 
-    <section>
+    <!--Inicio-->
+    <main>
         <div class="w-full h-[600px] bg-[#F9F3E9] flex flex-col items-center justify-center gap-8 px-4 md:flex-row">
             <div class="text-center md:text-left max-w-md">
                 <h1 class="text-2xl font-bold">
@@ -55,355 +57,375 @@
                 <img src="./assets/logo.png" alt="Digeri Doceria">
             </div>
         </div>
+    </main>
+
+    <!--Destaques-->
+    <section>
+        <div class="bg-[#ffffff] py-12 px-4 text-center" id="destaques">
+            <h2 class="text-3xl font-semibold text-[#5D4037]">Nossos Doces Mais Amados</h2>
+            <p class="text-[#927F6C] mt-2">
+                Conheça as criações que conquistaram o paladar dos nossos clientes e se tornaram verdadeiros sucessos
+            </p>
+            <div class="w-16 h-1 bg-[#5C6D39] mx-auto mt-2 rounded"></div>
+
+            <!-- Cards -->
+            <div class="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
+                    <div class="bg-[#F1B5BB] flex items-center justify-center h-60">
+                        <img src="./assets/doces/ovo3.png" alt="Brigadeiro" class="h-60 w-full" />
+                    </div>
+                    <div class="p-4 text-left">
+                        <h3 class="font-semibold">Brigadeiro Gourmet</h3>
+                        <p class="text-sm text-gray-500">
+                            Nosso clássico brigadeiro com chocolate belga premium e finalização artesanal
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-[#5C6D39] font-semibold text-sm">R$ 8,90 <span
+                                    class="text-xs">/unid</span></span>
+                            <button class="bg-[#5C6D39] text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
+                    <div class="bg-[#F1B5BB] flex items-center justify-center h-60">
+                        <img src="./assets/doces/bolo1.png" alt="Macaron" class="h-60 w-full" />
+                    </div>
+                    <div class="p-4 text-left">
+                        <h3 class="font-semibold">Macaron Francês</h3>
+                        <p class="text-sm text-gray-500">
+                            Delicados macarons com recheios exclusivos e textura perfeita
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-[#5C6D39] font-semibold text-sm">R$ 12,50 <span
+                                    class="text-xs">/unid</span></span>
+                            <button class="bg-[#5C6D39] text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
+                    <div class="bg-[#5C6D39] flex items-center justify-center h-60">
+                        <img src="./assets/doces/torta3.png" alt="Red Velvet" class="h-60 w-full" />
+                    </div>
+                    <div class="p-4 text-left">
+                        <h3 class="font-semibold">Bolo Red Velvet</h3>
+                        <p class="text-sm text-gray-500">
+                            Bolo aveludado com cobertura de cream cheese e decoração artesanal
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-[#5C6D39] font-semibold text-sm">R$ 120,00</span>
+                            <button class="bg-[#5C6D39] text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão final -->
+            <div class="mt-10">
+                <button
+                    class="border border-green-900 text-green-900 px-6 py-2 rounded-full hover:bg-green-100 transition">
+                    <a href="#catalogo">Ver catálogo completo</a>
+                </button>
+            </div>
+        </div>
     </section>
 
-    <div class="bg-[#ffffff] py-12 px-4 text-center" id="destaques">
-        <h2 class="text-3xl font-semibold text-[#653C2B]">Nossos Doces Mais Amados</h2>
-        <p class="text-[#927F6C] mt-2">
-            Conheça as criações que conquistaram o paladar dos nossos clientes e se tornaram verdadeiros sucessos
-        </p>
-        <div class="w-16 h-1 bg-green-700 mx-auto mt-2 rounded"></div>
-
-        <!-- Cards -->
-        <div class="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
-            <!-- Card 1 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
-                <div class="bg-[#F1B5BB] flex items-center justify-center h-60">
-                    <img src="./assets/doces/ovo3.png" alt="Brigadeiro" class="h-60 w-full" />
-                </div>
-                <div class="p-4 text-left">
-                    <h3 class="font-semibold">Brigadeiro Gourmet</h3>
-                    <p class="text-sm text-gray-500">
-                        Nosso clássico brigadeiro com chocolate belga premium e finalização artesanal
-                    </p>
-                    <div class="flex items-center justify-between mt-4">
-                        <span class="text-green-700 font-semibold text-sm">R$ 8,90 <span
-                                class="text-xs">/unid</span></span>
-                        <button class="bg-green-800 text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
-                    </div>
-                </div>
+    <!--Catalogo Completo-->
+    <section>
+        <div class="bg-[#F9F3E9] w-full mx-auto p-6" id="catalogo">
+            <!-- Cabeçalho -->
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold">Catálogo Completo</h2>
+                <p class="text-gray-500 text-sm">Explore nossa variedade de doces artesanais e bolos para todas as
+                    ocasiões
+                </p>
+                <div class="h-1 w-12 bg-[#5C6D39] mx-auto mt-2 rounded-full"></div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
-                <div class="bg-[#F1B5BB] flex items-center justify-center h-60">
-                    <img src="./assets/doces/bolo1.png" alt="Macaron" class="h-60 w-full" />
-                </div>
-                <div class="p-4 text-left">
-                    <h3 class="font-semibold">Macaron Francês</h3>
-                    <p class="text-sm text-gray-500">
-                        Delicados macarons com recheios exclusivos e textura perfeita
-                    </p>
-                    <div class="flex items-center justify-between mt-4">
-                        <span class="text-[#F1B5BB] font-semibold text-sm">R$ 12,50 <span
-                                class="text-xs">/unid</span></span>
-                        <button class="bg-[#4a2d27] text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
-                    </div>
-                </div>
+            <!-- Botões de filtro -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button data-filter="todos"
+                    class="filter-btn bg-[#5C6D39] text-white px-4 py-1 rounded-full text-sm">Todos</button>
+                <button data-filter="Brigadeiros"
+                    class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Brigadeiros</button>
+                <button data-filter="Bolos"
+                    class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Bolos</button>
+                <button data-filter="Combos"
+                    class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Combos</button>
             </div>
 
-            <!-- Card 3 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden w-72">
-                <div class="bg-green-800 flex items-center justify-center h-60">
-                    <img src="./assets/doces/torta3.png" alt="Red Velvet" class="h-60 w-full" />
-                </div>
-                <div class="p-4 text-left">
-                    <h3 class="font-semibold">Bolo Red Velvet</h3>
-                    <p class="text-sm text-gray-500">
-                        Bolo aveludado com cobertura de cream cheese e decoração artesanal
-                    </p>
-                    <div class="flex items-center justify-between mt-4">
-                        <span class="text-blue-600 font-semibold text-sm">R$ 120,00</span>
-                        <button class="bg-green-800 text-white text-sm px-4 py-1 rounded-full">Ver detalhes</button>
+            <!-- Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4" id="cards-container">
+
+                <!-- Brigadeiros -->
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/ovo1.png" alt="Brigadeiro" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Teste Brigadeiro Tradicional</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="preco text-[#5C6D39] font-semibold">R$ 6,50</span>
+                            <button class="bg-[#5C6D39] text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
                     </div>
                 </div>
+
+                <!--
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/ovo2.png" alt="Brigadeiro" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Brigadeiro Tradicional</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 6,50</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/ovo3.png" alt="Brigadeiro" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Brigadeiro Tradicional</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 6,50</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/ovo4.png" alt="Brigadeiro" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Brigadeiro Tradicional</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 6,50</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+-->
+                <!-- Bolos -->
+                <!--
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/bolo1.png" alt="Bolo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Bolo de Chocolate</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 129,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/bolo2.png" alt="Bolo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Bolo de Chocolate</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 129,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/bolo3.png" alt="Bolo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Bolo de Chocolate</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 129,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/bolo4.png" alt="Bolo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">Bolo de Chocolate</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 129,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+-->
+
+                <!-- Combos -->
+                <!--
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/torta1.png" alt="Combo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 229,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/torta2.png" alt="Combo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 229,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/torta3.png" alt="Combo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 229,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
+                    <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
+                        <img src="./assets/doces/torta4.png" alt="Combo" class="h-60 w-full">
+                    </div>
+                    <div class="p-4 text-sm">
+                        <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
+                        <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-green-800 font-semibold">R$ 229,99</span>
+                            <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+    </section>
+
+    <!--Encomenda Orçamento-->
+    <section>
+        <div class="bg-[#5C6D39] w-full mx-auto p-10">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white">"Doçura é a nossa forma de espalhar felicidade"</h2>
+                <p class="text-white text-sm">Cada doce é feito com amor e dedicação </p>
             </div>
         </div>
 
-        <!-- Botão final -->
-        <div class="mt-10">
-            <button class="border border-green-900 text-green-900 px-6 py-2 rounded-full hover:bg-green-100 transition">
-                <a href="#catalogo">Ver catálogo completo</a>
-            </button>
-        </div>
-    </div>
+        <div class="flex flex-col md:flex-row items-start gap-10 p-6 md:p-12 bg-[#F9F3E9]" id="contato">
+            <!-- Lado esquerdo com texto e benefícios -->
+            <div class="flex-1 space-y-6">
+                <h2 class="text-3xl font-bold text-brown-800">Encomende Sua Doçura</h2>
+                <p class="text-gray-600">
+                    Transforme sua celebração em um momento inesquecível com nossos doces artesanais. Fazemos encomendas
+                    personalizadas para festas, eventos corporativos e ocasiões especiais.
+                </p>
 
-    <div class="bg-[#F9F3E9] w-full mx-auto p-6" id="catalogo">
-        <!-- Cabeçalho -->
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold">Catálogo Completo</h2>
-            <p class="text-gray-500 text-sm">Explore nossa variedade de doces artesanais e bolos para todas as ocasiões
-            </p>
-            <div class="h-1 w-12 bg-green-800 mx-auto mt-2 rounded-full"></div>
-        </div>
+                <p class="text-gray-600">Importante: Para garantir a melhor qualidade, pedimos que os pedidos sejam
+                    feitos
+                    com no mínimo 48 horas de antecedência.</p>
 
-        <!-- Botões de filtro -->
-        <div class="flex flex-wrap justify-center gap-2 mb-8">
-            <button data-filter="todos"
-                class="filter-btn bg-green-800 text-white px-4 py-1 rounded-full text-sm">Todos</button>
-            <button data-filter="Brigadeiros"
-                class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Brigadeiros</button>
-            <button data-filter="Bolos"
-                class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Bolos</button>
-            <button data-filter="Combos"
-                class="filter-btn border border-gray-300 text-gray-600 px-4 py-1 rounded-full text-sm">Combos</button>
-        </div>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <span class="bg-green-100 text-green-600 p-2 rounded-full">
+                            📋
+                        </span>
+                        <div>
+                            <p class="font-semibold text-brown-700">Cardápio Personalizado</p>
+                            <p class="text-gray-500 text-sm">Adaptamos nosso cardápio às suas preferências e
+                                necessidades
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-pink-100 text-pink-600 p-2 rounded-full">
+                            ⏰
+                        </span>
+                        <div>
+                            <p class="font-semibold text-brown-700">Entrega Pontual</p>
+                            <p class="text-gray-500 text-sm">Garantimos a entrega no horário combinado</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-yellow-100 text-yellow-600 p-2 rounded-full">
+                            ⭐
+                        </span>
+                        <div>
+                            <p class="font-semibold text-brown-700">Qualidade Premium</p>
+                            <p class="text-gray-500 text-sm">Ingredientes selecionados de alta qualidade</p>
+                        </div>
+                    </li>
+                </ul>
 
-        <!-- Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4" id="cards-container">
-
-            <!-- Brigadeiros -->
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/ovo1.png" alt="Brigadeiro" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 6,50</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
+                <!-- Botão WhatsApp para cardápio direto (opcional) -->
+                <button onclick="window.open('https://wa.me/71985266101', '_blank')"
+                    class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12.04 2.003a9.968 9.968 0 00-9.967 9.965c0 1.756.457 3.434 1.324 4.918L2 22l5.296-1.379a9.933 9.933 0 004.744 1.208h.004a9.968 9.968 0 000-19.936zm0 18.034a8.015 8.015 0 01-4.082-1.129l-.291-.173-3.139.816.84-3.064-.189-.31a8.03 8.03 0 01-1.22-4.256c0-4.426 3.602-8.03 8.03-8.03 4.426 0 8.028 3.603 8.028 8.03s-3.602 8.03-8.027 8.03zm4.406-5.74c-.245-.123-1.449-.715-1.674-.797-.224-.08-.388-.122-.553.122s-.635.797-.779.963c-.143.163-.286.183-.53.06-.245-.122-1.035-.382-1.972-1.216-.728-.65-1.22-1.452-1.362-1.697-.143-.245-.016-.377.107-.5.11-.109.245-.285.367-.428.123-.142.163-.244.245-.407.082-.162.04-.305-.02-.428-.06-.122-.53-1.282-.726-1.755-.19-.453-.384-.39-.53-.397l-.45-.008c-.162 0-.427.061-.652.285-.224.224-.857.837-.857 2.04s.877 2.367 1 2.531c.122.162 1.726 2.63 4.184 3.688.585.252 1.04.403 1.395.516.585.186 1.117.16 1.538.097.47-.07 1.449-.592 1.653-1.165.204-.571.204-1.06.143-1.165-.06-.102-.224-.162-.469-.285z" />
+                    </svg>
+                    Fazer pedido pelo WhatsApp
+                </button>
             </div>
 
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/ovo2.png" alt="Brigadeiro" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 6,50</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/ovo3.png" alt="Brigadeiro" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 6,50</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Brigadeiros">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/ovo4.png" alt="Brigadeiro" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Brigadeiro Tradicional</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 6,50</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Bolos -->
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/bolo1.png" alt="Bolo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Bolo de Chocolate</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 129,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/bolo2.png" alt="Bolo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Bolo de Chocolate</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 129,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/bolo3.png" alt="Bolo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Bolo de Chocolate</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 129,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Bolos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/bolo4.png" alt="Bolo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">Bolo de Chocolate</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 129,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Combos -->
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/torta1.png" alt="Combo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 229,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/torta2.png" alt="Combo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 229,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/torta3.png" alt="Combo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 229,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white rounded-lg shadow-md overflow-hidden" data-category="Combos">
-                <div class="bg-[#F1B5BB] h-60 flex items-center justify-center">
-                    <img src="./assets/doces/torta4.png" alt="Combo" class="h-60 w-full">
-                </div>
-                <div class="p-4 text-sm">
-                    <h3 class="font-semibold">1 Bolo de Chocolate + 30 Brigadeiros</h3>
-                    <p class="text-gray-500 text-xs">Feito com chocolate de qualidade</p>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-green-800 font-semibold">R$ 229,99</span>
-                        <button class="bg-green-800 text-white px-3 py-1 rounded-full text-xs">🛒 Adicionar</button>
-                    </div>
-                </div>
+            <!-- Formulário -->
+            <div class="bg-yellow-50 rounded-xl shadow-md p-6 w-full md:w-[400px] space-y-4">
+                <h3 class="text-lg font-semibold text-brown-800">Solicite um Orçamento</h3>
+                <input id="nome" type="text" placeholder="Seu nome completo"
+                    class="w-full px-4 py-2 border rounded-md" />
+                <input id="email" type="email" placeholder="seu@email.com" class="w-full px-4 py-2 border rounded-md" />
+                <input id="telefone" type="tel" placeholder="(00) 00000-0000"
+                    class="w-full px-4 py-2 border rounded-md" />
+                <textarea id="detalhes" rows="4"
+                    placeholder="Descreva o que você precisa, quantidade, data do evento, etc."
+                    class="w-full px-4 py-2 border rounded-md"></textarea>
+                <button id="submit-orcamento" type="button"
+                    class="w-full bg-green-500 hover:bg-[#5C6D39] text-white font-medium py-2 rounded-md">
+                    Enviar solicitação
+                </button>
+                <p class="text-xs text-gray-500">Responderemos em até 24 horas com seu orçamento personalizado.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="bg-[#5C6D39] w-full mx-auto p-10">
-        <div class="text-center">
-            <h2 class="text-3xl font-bold text-white">"Doçura é a nossa forma de espalhar felicidade"</h2>
-            <p class="text-white text-sm">Cada doce é feito com amor e dedicação </p>
-        </div>
-    </div>
-
-    <div class="flex flex-col md:flex-row items-start gap-10 p-6 md:p-12 bg-[#F9F3E9]" id="contato">
-        <!-- Lado esquerdo com texto e benefícios -->
-        <div class="flex-1 space-y-6">
-            <h2 class="text-3xl font-bold text-brown-800">Encomende Sua Doçura</h2>
-            <p class="text-gray-600">
-                Transforme sua celebração em um momento inesquecível com nossos doces artesanais. Fazemos encomendas
-                personalizadas para festas, eventos corporativos e ocasiões especiais.
-            </p>
-
-            <p class="text-gray-600">Importante: Para garantir a melhor qualidade, pedimos que os pedidos sejam feitos
-                com no mínimo 48 horas de antecedência.</p>
-
-            <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                    <span class="bg-green-100 text-green-600 p-2 rounded-full">
-                        📋
-                    </span>
-                    <div>
-                        <p class="font-semibold text-brown-700">Cardápio Personalizado</p>
-                        <p class="text-gray-500 text-sm">Adaptamos nosso cardápio às suas preferências e necessidades
-                        </p>
-                    </div>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="bg-pink-100 text-pink-600 p-2 rounded-full">
-                        ⏰
-                    </span>
-                    <div>
-                        <p class="font-semibold text-brown-700">Entrega Pontual</p>
-                        <p class="text-gray-500 text-sm">Garantimos a entrega no horário combinado</p>
-                    </div>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="bg-yellow-100 text-yellow-600 p-2 rounded-full">
-                        ⭐
-                    </span>
-                    <div>
-                        <p class="font-semibold text-brown-700">Qualidade Premium</p>
-                        <p class="text-gray-500 text-sm">Ingredientes selecionados de alta qualidade</p>
-                    </div>
-                </li>
-            </ul>
-
-            <!-- Botão WhatsApp para cardápio direto (opcional) -->
-            <button onclick="window.open('https://wa.me/71985266101', '_blank')"
-                class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md flex items-center gap-2">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M12.04 2.003a9.968 9.968 0 00-9.967 9.965c0 1.756.457 3.434 1.324 4.918L2 22l5.296-1.379a9.933 9.933 0 004.744 1.208h.004a9.968 9.968 0 000-19.936zm0 18.034a8.015 8.015 0 01-4.082-1.129l-.291-.173-3.139.816.84-3.064-.189-.31a8.03 8.03 0 01-1.22-4.256c0-4.426 3.602-8.03 8.03-8.03 4.426 0 8.028 3.603 8.028 8.03s-3.602 8.03-8.027 8.03zm4.406-5.74c-.245-.123-1.449-.715-1.674-.797-.224-.08-.388-.122-.553.122s-.635.797-.779.963c-.143.163-.286.183-.53.06-.245-.122-1.035-.382-1.972-1.216-.728-.65-1.22-1.452-1.362-1.697-.143-.245-.016-.377.107-.5.11-.109.245-.285.367-.428.123-.142.163-.244.245-.407.082-.162.04-.305-.02-.428-.06-.122-.53-1.282-.726-1.755-.19-.453-.384-.39-.53-.397l-.45-.008c-.162 0-.427.061-.652.285-.224.224-.857.837-.857 2.04s.877 2.367 1 2.531c.122.162 1.726 2.63 4.184 3.688.585.252 1.04.403 1.395.516.585.186 1.117.16 1.538.097.47-.07 1.449-.592 1.653-1.165.204-.571.204-1.06.143-1.165-.06-.102-.224-.162-.469-.285z" />
-                </svg>
-                Fazer pedido pelo WhatsApp
-            </button>
-        </div>
-
-        <!-- Formulário -->
-        <div class="bg-yellow-50 rounded-xl shadow-md p-6 w-full md:w-[400px] space-y-4">
-            <h3 class="text-lg font-semibold text-brown-800">Solicite um Orçamento</h3>
-            <input id="nome" type="text" placeholder="Seu nome completo" class="w-full px-4 py-2 border rounded-md" />
-            <input id="email" type="email" placeholder="seu@email.com" class="w-full px-4 py-2 border rounded-md" />
-            <input id="telefone" type="tel" placeholder="(00) 00000-0000" class="w-full px-4 py-2 border rounded-md" />
-            <textarea id="detalhes" rows="4" placeholder="Descreva o que você precisa, quantidade, data do evento, etc."
-                class="w-full px-4 py-2 border rounded-md"></textarea>
-            <button id="submit-orcamento" type="button"
-                class="w-full bg-green-500 hover:bg-[#5C6D39] text-white font-medium py-2 rounded-md">
-                Enviar solicitação
-            </button>
-            <p class="text-xs text-gray-500">Responderemos em até 24 horas com seu orçamento personalizado.</p>
-        </div>
-    </div>
-
+    <!--Footer-->
     <footer class="bg-[#5C6D39] text-white px-6 py-10">
         <div
             class="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between gap-8 items-center justify-center text-center">
@@ -446,32 +468,6 @@
         </div>
     </footer>
 
-
-    <script>
-        document.getElementById('submit-orcamento').addEventListener('click', () => {
-            const nome = document.getElementById('nome').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const telefone = document.getElementById('telefone').value.trim();
-            const detalhes = document.getElementById('detalhes').value.trim();
-
-            if (!nome || !email || !telefone || !detalhes) {
-                alert('Por favor, preencha todos os campos.');
-                return;
-            }
-
-            const message =
-                `*Novo pedido de orçamento:*` +
-                `Nome: ${nome},` +
-                `E-mail: ${email},` +
-                `Telefone: ${telefone},` +
-                `Detalhes: ${detalhes}`;
-
-            const whatsappURL = `https://wa.me/71985266101?text=${encodeURI(message)}`;
-            window.open(whatsappURL, '_blank');
-        });
-    </script>
-
-
     <!-- Botão de Carrinho Fixo -->
     <button id="toggle-cart"
         class="fixed bottom-4 right-4 bg-green-800 text-white px-4 py-2 rounded-full shadow-lg z-50">
@@ -500,6 +496,7 @@
 
     </div>
 
+    <!-- Script para categorias-->
     <script>
         const filterButtons = document.querySelectorAll(".filter-btn");
         const cards = document.querySelectorAll(".card");
@@ -508,8 +505,8 @@
             btn.addEventListener("click", () => {
                 const category = btn.getAttribute("data-filter");
 
-                filterButtons.forEach(b => b.classList.remove("bg-green-800", "text-white"));
-                btn.classList.add("bg-green-800", "text-white");
+                filterButtons.forEach(b => b.classList.remove("bg-[#5C6D39]", "text-white"));
+                btn.classList.add("bg-[#5C6D39]", "text-white");
 
                 cards.forEach(card => {
                     const cardCategory = card.getAttribute("data-category");
@@ -523,6 +520,7 @@
         });
     </script>
 
+    <!-- Script Carrinho-->
     <script>
         const cart = [];
         const cartPanel = document.getElementById('cart-panel');
@@ -531,10 +529,12 @@
         const cartItemsEl = document.getElementById('cart-items');
         const cartTotalEl = document.getElementById('cart-total');
 
+        //Aparecer menu
         toggleCartBtn.addEventListener('click', () => {
             cartPanel.classList.toggle('translate-x-full');
         });
 
+        //Esconder menu
         closeCartBtn.addEventListener('click', () => {
             cartPanel.classList.add('translate-x-full');
         });
@@ -563,7 +563,7 @@
                 cartItemsEl.appendChild(li);
             });
 
-            // Botões de adicionar quantidade
+            // Botões de adicionar quantidade dando funcionalidade
             document.querySelectorAll('.increment').forEach(button => {
                 button.addEventListener('click', () => {
                     const index = parseInt(button.getAttribute('data-index'));
@@ -572,30 +572,45 @@
                 });
             });
 
-            // Botões de remover quantidade
+            // Botões de remover quantidade dando funcionalidade
             document.querySelectorAll('.decrement').forEach(button => {
                 button.addEventListener('click', () => {
                     const index = parseInt(button.getAttribute('data-index'));
                     if (cart[index].quantity > 1) {
                         cart[index].quantity -= 1;
+                        renderCart();
                     } else {
-                        cart.splice(index, 1);
+                        Swal.fire({
+                            title: 'Tem certeza?',
+                            text: "Você quer remover este item do carrinho?",
+                            icon: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Sim, remover!'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                cart.splice(index, 1);
+                                renderCart();
+                                Swal.fire('Removido!', 'O item foi removido do carrinho.', 'success');
+                            }
+                        });
+
                     }
-                    renderCart();
                 });
             });
 
             cartTotalEl.textContent = total.toFixed(2);
         }
 
-
+        /* BOTÃO CARD CLIQUE */
 
         // Detectar cliques nos botões "Adicionar"
         document.querySelectorAll('.card button').forEach(button => {
             button.addEventListener('click', () => {
                 const card = button.closest('.card');
                 const name = card.querySelector('h3').textContent;
-                const priceText = card.querySelector('span.text-green-800')?.textContent || 'R$ 0,00';
+                const priceText = card.querySelector('.preco')?.textContent || 'R$ 0,00';
                 const price = parseFloat(priceText.replace('R$', '').replace(',', '.'));
 
                 // Verifica se o item já existe
@@ -608,41 +623,82 @@
 
                 renderCart();
 
-                document.getElementById('finalize-order').addEventListener('click', () => {
-                    if (cart.length === 0) {
-                        alert('Seu carrinho está vazio!');
-                        return;
-                    }
-
-                    let message = '*Pedido via site:*%0A';
-
-                    cart.forEach(item => {
-                        message += `• ${item.quantity}x ${item.name} - R$ ${item.price.toFixed(2)}%0A`;
-                    });
-
-                    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-                    message += `%0A*Total: R$ ${total.toFixed(2)}*`;
-
-                    const phone = '71996417863';
-                    const whatsappURL = `https://wa.me/${phone}?text=${message}`;
-
-                    window.open(whatsappURL, '_blank');
-                });
-
-
                 // Feedback visual
                 const originalText = button.textContent;
                 button.textContent = '✅ Adicionado!';
-                button.classList.add('bg-green-700');
+                button.classList.add('bg-[#5C6D39]');
 
                 setTimeout(() => {
                     button.textContent = originalText;
-                    button.classList.remove('bg-green-700');
+                    button.classList.remove('bg-[#5C6D39]');
                 }, 1000);
+            });
+
+            //Botão finalizar Pedido
+            document.getElementById('finalize-order').addEventListener('click', () => {
+                if (cart.length === 0) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: '🛒 Carrinho vazio!',
+                        text: 'Adicione algum item antes de finalizar.',
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'Beleza'
+                    });
+
+                    return;
+                }
+
+                let message = '*Pedido via site:*%0A';
+
+                cart.forEach(item => {
+                    message += `• ${item.quantity}x ${item.name} - R$ ${item.price.toFixed(2)}%0A`;
+                });
+
+                const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+                message += `%0A*Total: R$ ${total.toFixed(2)}*`;
+
+                const phone = '71996417863';
+                const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+
+                window.open(whatsappURL, '_blank');
             });
         });
 
     </script>
+
+    <!--Script Solicite Orçamento-->
+    <script>
+        document.getElementById('submit-orcamento').addEventListener('click', () => {
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const detalhes = document.getElementById('detalhes').value.trim();
+
+            if (!nome || !email || !telefone || !detalhes) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: '⚠️ Atenção!',
+                    text: 'Por favor, preencha todos os campos.',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'Ok'
+                });
+                return;
+            }
+
+            const message =
+                `*Novo pedido de orçamento:*` +
+                `Nome: ${nome},` +
+                `E-mail: ${email},` +
+                `Telefone: ${telefone},` +
+                `Detalhes: ${detalhes}`;
+
+            const whatsappURL = `https://wa.me/71985266101?text=${encodeURI(message)}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 
