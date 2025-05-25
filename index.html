@@ -708,14 +708,14 @@
                 return;
             }
 
-            const message =
-                `*Novo pedido de orçamento:*` +
-                `Nome: ${nome},` +
-                `E-mail: ${email},` +
-                `Telefone: ${telefone},` +
-                `Detalhes: ${detalhes}`;
+            let message = '*Novo pedido de orçamento via site:*%0A';
+            message += `• ${nome}%0A`;
+            message += `• ${email}%0A`;
+            message += `• ${telefone}%0A`;
+            message += `• ${detalhes}`;
 
-            const whatsappURL = `https://wa.me/71985266101?text=${encodeURI(message)}`;
+            const phone = '71996417863';
+            const whatsappURL = `https://wa.me/${phone}?text=${message}`;
             window.open(whatsappURL, '_blank');
         });
     </script>
